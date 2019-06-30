@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto_import_example;
+
+option cc_enable_arenas = true;
+option java_multiple_files = true;
+option java_outer_classname = "FooProto";
+option java_package = "foo";
+
+message Foo {
+  int32 value = 1;
+}
