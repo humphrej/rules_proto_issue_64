@@ -8,7 +8,7 @@ proto_library(
     srcs = [
         "foo.proto",
     ],
-    #strip_import_prefix = "//proto/proto_import_example"
+    strip_import_prefix = "//proto/proto_import_example"
 )
 
 java_proto_library(
@@ -24,7 +24,7 @@ proto_library(
     deps = [
         ":foo_proto"
     ],
-    #strip_import_prefix = "//proto/proto_import_example"
+    strip_import_prefix = "//proto/proto_import_example"
 )
 
 java_proto_library(
@@ -42,7 +42,7 @@ proto_library(
         ":foo_proto",
         ":bar_proto"
     ],
-    #strip_import_prefix = "//proto/proto_import_example"
+    strip_import_prefix = "//proto/proto_import_example"
 )
 
 java_grpc_library(
